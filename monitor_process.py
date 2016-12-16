@@ -32,6 +32,9 @@ def main():
 			streamer.log(PROCESS_NAME,"Exited")
 			streamer.flush()
 			exit()
+		else:
+			streamer.log(PROCESS_NAME,"Running")
+			streamer.flush()
 		time.sleep(60*MINUTES_BETWEEN_READS)
 
 if __name__ == "__main__":
