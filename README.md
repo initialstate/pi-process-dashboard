@@ -1,4 +1,4 @@
-#How to Remotely Monitor Your Pi Processes
+# How to Remotely Monitor Your Pi Processes
 ---
 _by Jamie Bailey, December 12, 2016_
 
