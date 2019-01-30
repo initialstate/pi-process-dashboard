@@ -2,6 +2,7 @@ import psutil
 import time
 import sys
 from ISStreamer.Streamer import Streamer
+from subprocess import PIPE, Popen
 
 # --------- User Settings ---------
 # Initial State settings
@@ -34,6 +35,9 @@ def main():
 			exit()
 		else:
 			streamer.log(PROCESS_NAME,"Running")
+			process = Popen(['hostname', '-I'], stdout=PIPE)
+			output, _error = process.communicate()
+			streamer.log(PROCESS_NAME + " IP Address", output.rstrip())
 			streamer.flush()
 		time.sleep(60*MINUTES_BETWEEN_READS)
 
