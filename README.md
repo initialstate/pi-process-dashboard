@@ -1,4 +1,4 @@
-# How to Remotely Monitor Your Pi Processes
+# Remotely Monitor Your Pi Processes and IP Addresses
 ---
 _by Jamie Bailey_
 
